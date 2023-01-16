@@ -27,13 +27,3 @@ body{
     width: 100%;
     /* background-color: red; */
 }
-
-.number1{
-    transform: rotate(30deg)
-}
-.number2{
-    transform: rotate(180deg)
-}
-.x{
-    transform: rotate(180deg);
-}
