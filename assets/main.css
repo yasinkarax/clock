@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.clock{
+    background-color: black;
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    position: relative;
+    border: 8px solid #31e1e7;
+}
+
+.number{
+    font-size: 3rem;
+    color: #ffffff;
+    text-align: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    /* background-color: red; */
+}
+
+.number1{
+    transform: rotate(30deg)
+}
+.number2{
+    transform: rotate(180deg)
+}
+.x{
+    transform: rotate(180deg);
+}
