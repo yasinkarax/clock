@@ -10,8 +10,8 @@ let startHour = new Date().getHours()*30;
 let startMinute = new Date().getMinutes()*6;
 
 
-setInterval(increaseHour, 3600000);
-setInterval(increaseMinute, 60000);
+// setInterval(increaseHour, (3600000 - new Date().getMilliseconds()));
+// setInterval(increaseMinute, (60000 - new Date().getMilliseconds()));
 setInterval(increaseSecond, 1000);
 
 function readyHour() {
@@ -30,22 +30,36 @@ readyHour();
 
 function increaseSecond(){
     let currentSecond = new Date().getSeconds();
-    
+    let currentMinute = new Date().getMinutes();
+    let currentHour = new Date().getHours();
+
     second.style.transform = `rotate(${currentSecond*6}deg)`;
+    if(currentSecond === 0){
+          minute.style.transform = `rotate(${currentMinute*6}deg)`;
+    };
+
+    if(currentMinute === 0)
+        hour.style.transform = `rotate(${currentHour*30}deg)`;
+        
+    console.log(currentMinute , " " , currentMinute*6)
 }
 
+
+
+
+/*
 function increaseMinute(){
     let currentMinute = new Date().getMinutes();
     
     minute.style.transform = `rotate(${currentMinute*6}deg)`;
-     console.log(currentMinute)
+     console.log(currentMinute + " " +currentMinute*6)
 }
 
 function increaseHour(){
     let currentHour = new Date().getHours();
     
     hour.style.transform = `rotate(${currentHour*30}deg)`;
-}
+}*/
 
 
 
