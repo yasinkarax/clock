@@ -1,0 +1,61 @@
+* 
+    margin: 0 
+    padding: 0 
+    box-sizing: border-box 
+
+.center
+    display: flex 
+    justify-content: center 
+    align-items: center 
+
+body 
+    @extend .center
+    height: 100vh 
+ 
+.clock 
+    @extend .center
+    background-color: black 
+    height: 350px 
+    width: 350px 
+    border-radius: 50% 
+    position: relative 
+    border: 8px solid #31e1e7 
+ 
+
+.number 
+    font-size: 3rem 
+    color: #ffffff 
+    text-align: center 
+    position: absolute 
+    height: 100% 
+    width: 100% 
+ 
+
+.hand 
+    position: absolute 
+    left: 49.2% 
+    bottom: 50% 
+    width: 3px 
+    background-color: red 
+    transform-origin: bottom 
+ 
+#second 
+    z-index: 10 
+    height: 120px 
+ 
+#minute 
+    height: 110px 
+ 
+
+#hour 
+    height: 65px 
+ 
+
+#clock-center 
+    background-color: #ffffff 
+    height: 15px 
+    width: 15px 
+    z-index: 11 
+    border-radius: 50% 
+    position: absolute 
+ 
