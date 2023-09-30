@@ -33,7 +33,6 @@ function increaseSecond(){
 
     second.style.transform = `rotate(${currentSecond*6}deg)`;
 
-    
     minute.style.transform = `rotate(${currentMinute*6}deg)`;
     hour.style.transform = `rotate(${currentHour*30}deg)`;
         
