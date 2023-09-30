@@ -38,3 +38,4 @@ function increaseSecond(){
         
     console.log(currentMinute+ " " + currentMinute*6)
 }
+
